@@ -1,0 +1,15 @@
+version: 2.1
+jobs:
+  run-test:
+    steps:
+      - checkout
+      - run:
+          name: Download dependency
+          command: npm ci
+      - run:
+        name: Run tests
+        command: npm run test-prod
+workflows:
+  run-test-workflow:
+    jobs:
+      - run-test
