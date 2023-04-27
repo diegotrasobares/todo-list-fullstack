@@ -3,3 +3,4 @@ playwright-report
 /node_modules/
 /junit.xml
 /test-results/
+/results.xml

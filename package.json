@@ -6,7 +6,7 @@
   },
   "scripts": {
     "postinstall": "npx playwright install",
-    "test-prod": "PLAYWRIGHT_JUNIT_OUTPUT_NAME=results.xml BASE_URL=https://single-page-application-fg5blhx72q-ey.a.run.app/ npx playwright test --reporter=junit",
+    "test-prod": "PLAYWRIGHT_JUNIT_OUTPUT_NAME=results/results.xml BASE_URL=https://single-page-application-fg5blhx72q-ey.a.run.app/ npx playwright test --reporter=junit",
     "test-local": "PLAYWRIGHT_JUNIT_OUTPUT_NAME=results.xml BASE_URL=http://localhost:3000 npx playwright test --reporter=junit,html",
     "prettier": "prettier --write ."
   },
