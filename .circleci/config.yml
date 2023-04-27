@@ -14,7 +14,8 @@ jobs:
           command: npm run test-prod
 
       - store_test_results:
-          path: results.xml
+          path: ./results.xml
+
 # Invoke jobs via workflows
 workflows:
   run-test-workflow:
