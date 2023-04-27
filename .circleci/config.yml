@@ -10,8 +10,9 @@ jobs:
       - run: npx playwright install
       - run: npx playwright install chrome
       - run:
-          name: Run test
+          name: Run desktop test
           command: npm run test-prod
+
       - store_test_results:
           path: results.xml
 # Invoke jobs via workflows
