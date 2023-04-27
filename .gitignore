@@ -25,3 +25,4 @@ buildNumber.properties
 **/*.tfvars
 
 **/node_modules
+/system-tests/playwright-js/node_modules/
