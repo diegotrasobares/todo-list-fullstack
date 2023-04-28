@@ -6,7 +6,10 @@ jobs:
     # Steps to the job
     steps:
       - checkout
-      - run: npm i -D @playwright/test
+      - run:
+          enviroment:
+            PASSWORD: PASSWORD
+          command: npm i -D @playwright/test
       - run: npx playwright install
       - run:
           name: Run desktop test

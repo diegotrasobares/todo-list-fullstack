@@ -13,5 +13,8 @@
   "prettier": {
     "printWidth": 120,
     "singleQuote": true
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
   }
 }

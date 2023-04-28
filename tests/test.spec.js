@@ -87,5 +87,10 @@ test.describe('Compliance', async () => {
       await ensure.theTaskContains(await asks.forTodoAt(await asks.forCurrentNumberOfTodos()), 'Completed Task');
       await ensure.theUrlContains('/completed');
     });
+
+    test ("Should be able to test the .env variable",async({})=>{
+      const password= process.env.PASSWORD;
+      await expect(password).toBe("fcf790c190c190c1")
+    })
   });
 });
