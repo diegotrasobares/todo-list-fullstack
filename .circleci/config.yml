@@ -8,7 +8,6 @@ jobs:
       - checkout
       - run: npm i -D @playwright/test
       - run: npx playwright install
-      - run: npx playwright install chrome
       - run:
           name: Run desktop test
           command: npm run test-prod
@@ -21,3 +20,8 @@ workflows:
   run-test-workflow:
     jobs:
       - run-test
+
+
+
+
+

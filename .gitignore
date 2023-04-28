@@ -4,3 +4,4 @@ playwright-report
 /junit.xml
 /test-results/
 /results.xml
+/results/results.xml

@@ -9,7 +9,7 @@ class Steps {
   createTodo = async (description) =>
     await test.step('Create todo with description ' + description, async () => {
       await test.step('Filling the task input', async () => {
-        await this.page.fill(ToDoList.input, description);
+        await this.page.fill('.new-todo', description);
       });
       await test.step("Press 'Enter' to add the new task", async () => {
         await this.page.keyboard.press('Enter');
