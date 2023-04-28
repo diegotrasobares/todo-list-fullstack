@@ -8,6 +8,7 @@ jobs:
       - checkout
       - run: cd system-tests/playwright-js && npm i -D @playwright/test
       - run: cd system-tests/playwright-js && npx playwright install
+      - run: cd system-tests/playwright-js && npx playwright install chrome
       - run:
           name: Run desktop test
           command: cd system-tests/playwright-js &&  npm run test-prod
