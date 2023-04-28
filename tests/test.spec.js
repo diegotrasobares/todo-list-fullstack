@@ -90,7 +90,7 @@ test.describe('Compliance', async () => {
 
     test ("Should be able to test the .env variable",async({})=>{
       const password= process.env.PASSWORD;
-      await expect(password).toBe("fcf790c190c190c1")
+      await expect(password).toBe("hello")
     })
   });
 });
